@@ -1,0 +1,23 @@
+---
+title: "Movie Review"
+author: "Michael Mok"
+date: "2/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library("knitr")
+library("dplyr")
+source("exercise.R")
+```
+
+##'r headline'
+
+> 'r short_summary'
+
+```{r link, echo=F}
+link_markdown <- paste0("[", headline, "](", link, ")")
+
+```
+
+'r link_markdown'
